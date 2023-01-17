@@ -65,7 +65,7 @@
 		D11459C32974BA9E00E49B1C /* APIClient+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient+Dependencies.swift"; sourceTree = "<group>"; };
 		D11459C62974BAD800E49B1C /* POIListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIListViewModel.swift; sourceTree = "<group>"; };
 		D11459C82974BB9300E49B1C /* POIListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIListView.swift; sourceTree = "<group>"; };
-		D11459CD2974BD9C00E49B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D11459CD2974BD9C00E49B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D13E1C2F29759CD90025CE8B /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		D13E1C3129759D4E0025CE8B /* FullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenView.swift; sourceTree = "<group>"; };
 		D13E1C3629759F960025CE8B /* Router+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+Dependencies.swift"; sourceTree = "<group>"; };
@@ -127,7 +127,6 @@
 		D114598D2974B5BC00E49B1C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				D11459CD2974BD9C00E49B1C /* Info.plist */,
 				D11459942974B5BD00E49B1C /* Preview Content */,
 				D11459B82974B5F200E49B1C /* Resources */,
 				D11459B92974B5FB00E49B1C /* Source */,
@@ -163,6 +162,7 @@
 		D11459B82974B5F200E49B1C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D11459CD2974BD9C00E49B1C /* Info.plist */,
 				D11459922974B5BD00E49B1C /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -561,7 +561,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_FILE = App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -589,7 +589,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_FILE = App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
