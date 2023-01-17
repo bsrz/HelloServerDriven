@@ -7,7 +7,7 @@ struct POIListView: View {
 
     var body: some View {
         List(viewModel.state.pointsOfInterests) { poi in
-            perform(action: poi.action, router: viewModel.router) {
+            NavigationActionView(action: poi.action) {
                 VStack(alignment: .leading) {
                     KFImage(poi.imageUrl)
                     Text(poi.title)
@@ -24,6 +24,8 @@ struct POIListView: View {
 
 struct POIListView_Previews: PreviewProvider {
     static var previews: some View {
-        POIListView()
+        NavigationView  {
+            POIListView()
+        }
     }
 }

@@ -7,7 +7,7 @@ struct SheetView<Content: View, Destination: View>: View {
     let content: () -> Content
     let destination: Destination
 
-    init(present destination: Destination, using content: @escaping () -> Content) {
+    init(present destination: Destination, @ViewBuilder content: @escaping () -> Content) {
         self.content = content
         self.destination = destination
     }

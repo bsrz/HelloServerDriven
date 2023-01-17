@@ -26,8 +26,8 @@
 		D13E1C3729759F960025CE8B /* Router+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E1C3629759F960025CE8B /* Router+Dependencies.swift */; };
 		D13E1C392975A0750025CE8B /* PointsOfInterestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E1C382975A0750025CE8B /* PointsOfInterestResponse.swift */; };
 		D13E1C3B2975A0BD0025CE8B /* NavigationAction+DisplayMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E1C3A2975A0BD0025CE8B /* NavigationAction+DisplayMethod.swift */; };
-		D13E1C3D2975A0E80025CE8B /* View+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E1C3C2975A0E80025CE8B /* View+Navigation.swift */; };
 		D13E1C3F2975A1B30025CE8B /* Router+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E1C3E2975A1B30025CE8B /* Router+Route.swift */; };
+		D1C7A14D297648BE009A7771 /* NavigationActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C7A14C297648BE009A7771 /* NavigationActionView.swift */; };
 		D1E9836A2974F9B70097ECEB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E983692974F9B70097ECEB /* Router.swift */; };
 		D1E9836F2974FB310097ECEB /* NavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E9836E2974FB310097ECEB /* NavigationAction.swift */; };
 /* End PBXBuildFile section */
@@ -71,8 +71,8 @@
 		D13E1C3629759F960025CE8B /* Router+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+Dependencies.swift"; sourceTree = "<group>"; };
 		D13E1C382975A0750025CE8B /* PointsOfInterestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsOfInterestResponse.swift; sourceTree = "<group>"; };
 		D13E1C3A2975A0BD0025CE8B /* NavigationAction+DisplayMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationAction+DisplayMethod.swift"; sourceTree = "<group>"; };
-		D13E1C3C2975A0E80025CE8B /* View+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Navigation.swift"; sourceTree = "<group>"; };
 		D13E1C3E2975A1B30025CE8B /* Router+Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+Route.swift"; sourceTree = "<group>"; };
+		D1C7A14C297648BE009A7771 /* NavigationActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationActionView.swift; sourceTree = "<group>"; };
 		D1E983692974F9B70097ECEB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D1E9836E2974FB310097ECEB /* NavigationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,7 +214,7 @@
 				D13E1C3329759F590025CE8B /* UI */,
 				D1E9836E2974FB310097ECEB /* NavigationAction.swift */,
 				D13E1C3A2975A0BD0025CE8B /* NavigationAction+DisplayMethod.swift */,
-				D13E1C3C2975A0E80025CE8B /* View+Navigation.swift */,
+				D1C7A14C297648BE009A7771 /* NavigationActionView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -397,10 +397,10 @@
 				D13E1C392975A0750025CE8B /* PointsOfInterestResponse.swift in Sources */,
 				D114598F2974B5BC00E49B1C /* App.swift in Sources */,
 				D1E9836F2974FB310097ECEB /* NavigationAction.swift in Sources */,
-				D13E1C3D2975A0E80025CE8B /* View+Navigation.swift in Sources */,
 				D11459C92974BB9300E49B1C /* POIListView.swift in Sources */,
 				D11459BF2974B8A800E49B1C /* APIClient.swift in Sources */,
 				D13E1C3B2975A0BD0025CE8B /* NavigationAction+DisplayMethod.swift in Sources */,
+				D1C7A14D297648BE009A7771 /* NavigationActionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,12 +13,16 @@ struct FullScreenView<Content: View, Destination: View>: View {
     @ObservedObject var viewModel: FullScreenViewModel
 
     let content: () -> Content
-    let destination: Destination
+    let destination: () -> Destination
 
-    init(viewModel: FullScreenViewModel, present destination: Destination, using content: @escaping () -> Content) {
+    init(
+        viewModel: FullScreenViewModel,
+        @ViewBuilder destination: @escaping () -> Destination,
+        @ViewBuilder content: @escaping () -> Content
+    ) {
         self.viewModel = viewModel
-        self.content = content
         self.destination = destination
+        self.content = content
     }
 
     var body: some View {
@@ -32,7 +36,7 @@ struct FullScreenView<Content: View, Destination: View>: View {
                         viewModel.dismiss()
                     }
                 ),
-                content: { destination }
+                content: { destination() }
             )
     }
 }
@@ -42,10 +46,13 @@ struct FullScreenView_Previews: PreviewProvider {
     static var previews: some View {
         FullScreenView(
             viewModel: viewModel,
-            present: Text("Presented")
-                .onTapGesture { viewModel.dismiss() }
-        ) {
-            Text("Launch")
-        }
+            destination: {
+                Text("Presented")
+                    .onTapGesture { viewModel.dismiss() }
+            },
+            content: {
+                Text("Launch")
+            }
+        )
     }
 }

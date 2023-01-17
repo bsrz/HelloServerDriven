@@ -2,22 +2,29 @@ import SwiftUI
 
 class Router {
 
+    @ViewBuilder
     /// Returns a view for the given route
     /// - Parameter route: The route used to determine which view to return
     /// - Returns: The view for the given route
-    func view(for route: Route) -> any View {
+    func view(for route: Route) -> some View {
         switch route {
         case .bar:
-            return Text("bar")
+            Text("bar")
 
         case .foo:
-            return Text("foo")
+            ZStack {
+                Circle()
+                    .foregroundColor(.red)
+
+                Text("foo")
+                    .foregroundColor(.white)
+            }
 
         case .qux:
-            return Text("qux")
+            Text("qux")
 
         case .details:
-            return Text("details")
+            Image(systemName: "swift")
         }
     }
 }

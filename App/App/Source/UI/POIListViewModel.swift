@@ -7,7 +7,6 @@ class POIListViewModel: ObservableObject {
     // MARK: - Dependencies
 
     @Dependency(\.apiClient) private var apiClient
-    @Dependency(\.router) var router
 
     // MARK: - Input
 
