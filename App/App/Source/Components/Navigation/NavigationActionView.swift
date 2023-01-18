@@ -45,7 +45,7 @@ struct NavigationActionView<Content: View>: View {
 
 struct NavigationActionView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationActionView(action: .init(displayMethod: .sheet, route: .foo)) {
+        NavigationActionView(action: .init(displayMethod: .sheet, route: .int(42))) {
             Text("go to foo")
         }
     }

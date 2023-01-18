@@ -10,7 +10,7 @@ struct PointOfInterest: Identifiable {
 
 // MARK: - Codable
 
-extension PointOfInterest: Codable {
+extension PointOfInterest: Decodable {
     enum CodingKeys: String, CodingKey {
         case title
         case description

@@ -8,23 +8,14 @@ class Router {
     /// - Returns: The view for the given route
     func view(for route: Route) -> some View {
         switch route {
-        case .bar:
-            Text("bar")
+        case .string(let string):
+            Text("string: \(string)")
 
-        case .foo:
-            ZStack {
-                Circle()
-                    .foregroundColor(.red)
+        case .int(let int):
+            Text("int: \(int)")
 
-                Text("foo")
-                    .foregroundColor(.white)
-            }
-
-        case .qux:
-            Text("qux")
-
-        case .details:
-            Image(systemName: "swift")
+        case .noPayload:
+            Text("no payload")
         }
     }
 }

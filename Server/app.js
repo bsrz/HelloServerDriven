@@ -12,7 +12,12 @@ app.get('/pointsOfInterest', (request, response) => {
                 hero_image_url: "https://picsum.photos/seed/boston/300/200",
                 action: {
                     display_method: "full_screen",
-                    route: 'details'
+                    route: {
+                        name: 'string',
+                        payload: {
+                            string: "Yellow and black"
+                        }
+                    }
                 }
             },
             {
@@ -21,7 +26,12 @@ app.get('/pointsOfInterest', (request, response) => {
                 hero_image_url: "https://picsum.photos/seed/chicago/300/200",
                 action: {
                     display_method: "push",
-                    route: 'details'
+                    route: {
+                        name: 'int',
+                        payload: {
+                            int: 24
+                        }
+                    }
                 }
             },
             {
@@ -30,7 +40,9 @@ app.get('/pointsOfInterest', (request, response) => {
                 hero_image_url: "https://picsum.photos/seed/detroit/300/200",
                 action: {
                     display_method: "sheet",
-                    route: 'details'
+                    route: {
+                        name: 'no_payload'
+                    }
                 }
             },
             {
@@ -39,7 +51,12 @@ app.get('/pointsOfInterest', (request, response) => {
                 hero_image_url: "https://picsum.photos/seed/montreal/300/200",
                 action: {
                     display_method: "full_screen",
-                    route: 'details'
+                    route: {
+                        name: 'string',
+                        payload: {
+                            string: "La sainte flanelle"
+                        }
+                    }
                 }
             },
             {
@@ -48,7 +65,12 @@ app.get('/pointsOfInterest', (request, response) => {
                 hero_image_url: "https://picsum.photos/seed/newyork/300/200",
                 action: {
                     display_method: "push",
-                    route: 'details'
+                    route: {
+                        name: 'int',
+                        payload: {
+                            int: 1337
+                        }
+                    }
                 }
             },
             {
@@ -57,7 +79,26 @@ app.get('/pointsOfInterest', (request, response) => {
                 hero_image_url: "https://picsum.photos/seed/toronto/300/200",
                 action: {
                     display_method: "sheet",
-                    route: 'details'
+                    route: {
+                        name: 'string',
+                        payload: {
+                            string: "Haven't won anything since '67"
+                        }
+                    }
+                }
+            },
+            {
+                title: "Gatineau",
+                description: "The Olympics",
+                hero_image_url: "https://picsum.photos/seed/gatineau/300/200",
+                action: {
+                    display_method: "full_screen",
+                    route: {
+                        name: 'int',
+                        payload: {
+                            int: 42
+                        }
+                    }
                 }
             },
         ]
