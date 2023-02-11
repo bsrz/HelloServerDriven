@@ -27,6 +27,9 @@
 		D13E1C392975A0750025CE8B /* OfficeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E1C382975A0750025CE8B /* OfficeList.swift */; };
 		D13E1C3B2975A0BD0025CE8B /* NavigationAction+DisplayMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E1C3A2975A0BD0025CE8B /* NavigationAction+DisplayMethod.swift */; };
 		D13E1C3F2975A1B30025CE8B /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E1C3E2975A1B30025CE8B /* Route.swift */; };
+		D17D521929980B0C000798DF /* OfficeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17D521829980B0C000798DF /* OfficeDetails.swift */; };
+		D17D521B29980E69000798DF /* OfficeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17D521A29980E69000798DF /* OfficeDetailsView.swift */; };
+		D17D521D29980E71000798DF /* OfficeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17D521C29980E71000798DF /* OfficeDetailsViewModel.swift */; };
 		D1C7A14D297648BE009A7771 /* NavigationActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C7A14C297648BE009A7771 /* NavigationActionView.swift */; };
 		D1D5F9402995B10E00C6DE62 /* Office.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5F93F2995B10E00C6DE62 /* Office.swift */; };
 		D1E9836A2974F9B70097ECEB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E983692974F9B70097ECEB /* Router.swift */; };
@@ -73,6 +76,9 @@
 		D13E1C382975A0750025CE8B /* OfficeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeList.swift; sourceTree = "<group>"; };
 		D13E1C3A2975A0BD0025CE8B /* NavigationAction+DisplayMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationAction+DisplayMethod.swift"; sourceTree = "<group>"; };
 		D13E1C3E2975A1B30025CE8B /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		D17D521829980B0C000798DF /* OfficeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeDetails.swift; sourceTree = "<group>"; };
+		D17D521A29980E69000798DF /* OfficeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeDetailsView.swift; sourceTree = "<group>"; };
+		D17D521C29980E71000798DF /* OfficeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeDetailsViewModel.swift; sourceTree = "<group>"; };
 		D1C7A14C297648BE009A7771 /* NavigationActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationActionView.swift; sourceTree = "<group>"; };
 		D1D5F93F2995B10E00C6DE62 /* Office.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Office.swift; sourceTree = "<group>"; };
 		D1E983692974F9B70097ECEB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -198,6 +204,7 @@
 				D11459C12974B9CB00E49B1C /* Location.swift */,
 				D1D5F93F2995B10E00C6DE62 /* Office.swift */,
 				D13E1C382975A0750025CE8B /* OfficeList.swift */,
+				D17D521829980B0C000798DF /* OfficeDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +212,8 @@
 		D11459C52974BAC300E49B1C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D17D521A29980E69000798DF /* OfficeDetailsView.swift */,
+				D17D521C29980E71000798DF /* OfficeDetailsViewModel.swift */,
 				D11459C82974BB9300E49B1C /* OfficeListView.swift */,
 				D11459C62974BAD800E49B1C /* OfficeListViewModel.swift */,
 			);
@@ -389,8 +398,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E9836A2974F9B70097ECEB /* Router.swift in Sources */,
+				D17D521D29980E71000798DF /* OfficeDetailsViewModel.swift in Sources */,
 				D11459912974B5BC00E49B1C /* AppView.swift in Sources */,
 				D13E1C3229759D4E0025CE8B /* FullScreenView.swift in Sources */,
+				D17D521B29980E69000798DF /* OfficeDetailsView.swift in Sources */,
 				D13E1C3729759F960025CE8B /* Router+Dependencies.swift in Sources */,
 				D13E1C3029759CD90025CE8B /* SheetView.swift in Sources */,
 				D11459C72974BAD800E49B1C /* OfficeListViewModel.swift in Sources */,
@@ -402,6 +413,7 @@
 				D114598F2974B5BC00E49B1C /* App.swift in Sources */,
 				D1E9836F2974FB310097ECEB /* NavigationAction.swift in Sources */,
 				D11459C92974BB9300E49B1C /* OfficeListView.swift in Sources */,
+				D17D521929980B0C000798DF /* OfficeDetails.swift in Sources */,
 				D11459BF2974B8A800E49B1C /* APIClient.swift in Sources */,
 				D13E1C3B2975A0BD0025CE8B /* NavigationAction+DisplayMethod.swift in Sources */,
 				D1C7A14D297648BE009A7771 /* NavigationActionView.swift in Sources */,

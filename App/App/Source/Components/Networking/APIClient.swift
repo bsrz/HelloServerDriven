@@ -27,4 +27,20 @@ class APIClient {
             throw Error.decodingError
         }
     }
+
+    func fetchOffice(id: String) async throws -> OfficeDetails {
+        guard let url = URL(string: "poi/\(id)", relativeTo: baseUrl) else { throw Error.invalidUrl }
+
+        let (data, response) = try await session.data(from: url)
+
+        guard let response = response as? HTTPURLResponse else { throw Error.unexpectedResponse }
+        guard (200..<300).contains(response.statusCode) else { throw Error.unexpectedStatusCode }
+
+        do {
+            return try JSONDecoder().decode(OfficeDetails.self, from: data)
+        } catch {
+            print("\(#function) error: \(error)")
+            throw Error.decodingError
+        }
+    }
 }
