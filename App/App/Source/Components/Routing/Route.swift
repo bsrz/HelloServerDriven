@@ -1,6 +1,5 @@
 enum Route: Decodable, Equatable {
-    case int(Int)
-    case string(String)
+    case details(String)
     case noPayload
 
     enum CodingKeys: CodingKey {
@@ -13,15 +12,10 @@ enum Route: Decodable, Equatable {
 
         let name = try container.decode(String.self, forKey: .name)
         switch name {
-        case "int":
-            struct IntValue: Codable { var int: Int }
-            let value = try container.decode(IntValue.self, forKey: .payload)
-            self = .int(value.int)
-
-        case "string":
-            struct StringValue: Codable { var string: String }
-            let value = try container.decode(StringValue.self, forKey: .payload)
-            self = .string(value.string)
+        case "details":
+            struct IdValue: Codable { var id: String }
+            let value = try container.decode(IdValue.self, forKey: .payload)
+            self = .details(value.id)
 
         case "no_payload":
             self = .noPayload

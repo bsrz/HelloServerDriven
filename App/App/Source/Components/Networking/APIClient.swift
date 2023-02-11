@@ -12,8 +12,8 @@ class APIClient {
     private let session: URLSession = .shared
     private let baseUrl: URL = .init(string: "http://localhost:3000/")!
 
-    func fetchPointsOfInterests() async throws -> PointsOfInterestResponse {
-        guard let url = URL(string: "pointsOfInterest", relativeTo: baseUrl) else { throw Error.invalidUrl }
+    func fetchOffices() async throws -> OfficeList {
+        guard let url = URL(string: "poi", relativeTo: baseUrl) else { throw Error.invalidUrl }
 
         let (data, response) = try await session.data(from: url)
 
@@ -21,8 +21,9 @@ class APIClient {
         guard (200..<300).contains(response.statusCode) else { throw Error.unexpectedStatusCode }
 
         do {
-            return try JSONDecoder().decode(PointsOfInterestResponse.self, from: data)
+            return try JSONDecoder().decode(OfficeList.self, from: data)
         } catch {
+            print("\(#function) error: \(error)")
             throw Error.decodingError
         }
     }

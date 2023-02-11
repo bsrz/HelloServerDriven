@@ -4,7 +4,7 @@ struct AppView: View {
     var body: some View {
         TabView {
             NavigationView {
-                POIListView()
+                OfficeListView()
             }
         }
     }

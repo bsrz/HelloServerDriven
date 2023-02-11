@@ -8,11 +8,8 @@ class Router {
     /// - Returns: The view for the given route
     func view(for route: Route) -> some View {
         switch route {
-        case .string(let string):
-            Text("string: \(string)")
-
-        case .int(let int):
-            Text("int: \(int)")
+        case .details(let id):
+            Text("Details: \(id)")
 
         case .noPayload:
             Text("no payload")

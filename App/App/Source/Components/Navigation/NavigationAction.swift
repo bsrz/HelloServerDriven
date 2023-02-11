@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct NavigationAction {
-    var displayMethod: DisplayMethod
+    var displayMethod: DisplayMethod? = nil
     var route: Route
 }
 
