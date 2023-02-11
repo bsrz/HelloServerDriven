@@ -8,39 +8,25 @@ final class RouteTests: XCTestCase {
     func test0() throws {
         let input1 = """
             {
-                "name": "int",
+                "name": "details",
                 "payload": {
-                    "int": 42
+                    "id": "42"
                 }
             }
         """.data(using: .utf8)!
 
 
         let output1 = try decoder.decode(Route.self, from: input1)
-        XCTAssertEqual(output1, .int(42))
-
+        XCTAssertEqual(output1, .details("42"))
 
         let input2 = """
-            {
-                "name": "string",
-                "payload": {
-                    "string": "hello, world"
-                }
-            }
-        """.data(using: .utf8)!
-
-
-        let output2 = try decoder.decode(Route.self, from: input2)
-        XCTAssertEqual(output2, .string("hello, world"))
-
-        let input3 = """
             {
                 "name": "no_payload"
             }
         """.data(using: .utf8)!
 
 
-        let output3 = try decoder.decode(Route.self, from: input3)
-        XCTAssertEqual(output3, .noPayload)
+        let output2 = try decoder.decode(Route.self, from: input2)
+        XCTAssertEqual(output2, .noPayload)
     }
 }
